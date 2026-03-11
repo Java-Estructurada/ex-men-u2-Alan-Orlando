@@ -36,9 +36,9 @@ import Java.util.Scanner;
 
     CostoTotalViaje= herramientasCalculos.CostoTotal(cNiños,cAdultos,cEstandarVuelo,cEstandarHospedaje);
 
-    Costonochestotal= herramientasCalculos.tarifa(cNiños,cAdultos,cEstandarVuelo,cEstandarHospedaje);
+    tarifaa= herramientasCalculos.tarifa(cNiños,cAdultos,cEstandarVuelo,cEstandarHospedaje);
 
-    Costonochestotal= herramientasCalculos.tarifa(cNiños,cAdultos,cEstandarVuelo,cEstandarHospedaje);
+    TotalViaje= herramientasCalculos.tarifaTotal(cNiños,cAdultos,cEstandarVuelo,cEstandarHospedaje);
 
     System.out.println("El costo total por la familia en el viaje es de $" + Costoviajetotal);
 
@@ -46,6 +46,9 @@ import Java.util.Scanner;
 
     System.out.println("El costo total por la familia del viaje sin intereses es de $" + CostoTotalViaje );
 
+    System.out.println("Los inteses son de $" + tarifaa );
+
+    System.out.println("El costo total por la familia del viaje $" + TotalViaje );
 
     
     }
