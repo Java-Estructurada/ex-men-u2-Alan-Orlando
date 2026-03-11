@@ -30,14 +30,23 @@ import Java.util.Scanner;
     System.out.println("Costo Estandar del Hospedaje:");
     cEstandarHospedaje =scan.nextInt;
 
-    Costoviajetotal= herramientasCalculos.CostoHospedaje(0, 0, 0)
+    Costoviajetotal= herramientasCalculos.CostoVuelo(cNiños,cAdultos,cEstandarVuelo);
+
+    Costonochestotal= herramientasCalculos.CostoHospedaje(cNiños,cAdultos,cEstandarHospedaje);
+
+    CostoTotalViaje= herramientasCalculos.CostoTotal(cNiños,cAdultos,cEstandarVuelo,cEstandarHospedaje);
+
+    Costonochestotal= herramientasCalculos.tarifa(cNiños,cAdultos,cEstandarVuelo,cEstandarHospedaje);
+
+    Costonochestotal= herramientasCalculos.tarifa(cNiños,cAdultos,cEstandarVuelo,cEstandarHospedaje);
+
+    System.out.println("El costo total por la familia en el viaje es de $" + Costoviajetotal);
+
+    System.out.println("El costo total por la familia por las noches es de $" + Costonochestotal );
+
+    System.out.println("El costo total por la familia del viaje sin intereses es de $" + CostoTotalViaje );
+
+
     
-
-
-
-
-    
-
-        
     }
 }

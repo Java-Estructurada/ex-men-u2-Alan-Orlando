@@ -53,8 +53,27 @@ public class herramientasCalculos {
     Total = tnoches + tViaje;
     
     Tari=Total * 1.2;
-    Tarifa=Total + tari;
-    return Tarifa;    
+    return Tari;    
+    }
+
+     public static int tarifaTotal (int cNiños,int cAdultos, int cEstandarVuelo, int cEstandarHospedaje ){
+    int cN,cA,cNi,cAd;
+    dNiños = cAdultos / 2;
+    cN = dNiños * cNiños;
+    cA= cAdultos * cEstandarVuelo;
+    tViaje=cN + cA;
+
+    dNiños = cAdultos * 0.30;
+    cNi = dNiños * cNiños;
+    cAd= cAdultos * cEstandarHospedaje;
+    tnoche=cNi + cAd;
+    tnoches = tnoche * nHotel;
+
+    Total = tnoches + tViaje;
+    
+    Tari=Total * 1.2;
+    tarifa=Total + tari;
+    return Tari;    
     }
 
 
