@@ -34,14 +34,33 @@ public class herramientasCalculos {
     tnoches = tnoche * nHotel;
 
     Total = tnoches + tViaje;
-    
+    return Total;    
+    }
 
+    public static int tarifa (int cNiños,int cAdultos, int cEstandarVuelo, int cEstandarHospedaje ){
+    int cN,cA,cNi,cAd;
+    dNiños = cAdultos / 2;
+    cN = dNiños * cNiños;
+    cA= cAdultos * cEstandarVuelo;
+    tViaje=cN + cA;
 
+    dNiños = cAdultos * 0.30;
+    cNi = dNiños * cNiños;
+    cAd= cAdultos * cEstandarHospedaje;
+    tnoche=cNi + cAd;
+    tnoches = tnoche * nHotel;
+
+    Total = tnoches + tViaje;
     
+    Tari=Total * 1.2;
+    Tarifa=Total + tari;
+    return Tarifa;    
     }
 
 
-}
-/*Subtotal del Viaje:
 
-La suma exacta del costo total de vuelos y el costo total de hospedaje. */
+
+}
+/*Comisión de la Agencia:
+
+La agencia cobra una tarifa de servicio equivalente al 12% del Subtotal del viaje. */

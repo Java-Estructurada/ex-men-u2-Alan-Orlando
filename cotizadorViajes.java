@@ -12,6 +12,7 @@ import Java.util.Scanner;
     public static void main(string[] args ){
 
     Scaner scan = new Scanner(System.in);
+    herramientasCalculos hc = new herramientasCalculos();
     
     
     System.out.println("Cantidad de Adultos:");
@@ -29,6 +30,7 @@ import Java.util.Scanner;
     System.out.println("Costo Estandar del Hospedaje:");
     cEstandarHospedaje =scan.nextInt;
 
+    Costoviajetotal= herramientasCalculos.CostoHospedaje(0, 0, 0)
     
 
 
